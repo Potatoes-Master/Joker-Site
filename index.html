@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styling.css">
+    <script src="parallax.js"></script>
+</head>
+
+<body class="body">
+
+    <h2 class="center-text">Card</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="subcard">
+                <img src="boar.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Game 1</b></h4>
+                    <p>The best game</p>
+                </div>
+            </div>
+            <div class="card-top center">
+                <h4>why is best game</h4>
+                <p>this is description</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="subcard">
+                <img src="boar.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Game 2</b></h4>
+                    <p>2nd best</p>
+                </div>
+            </div>
+
+            <div class="card-top center">
+                <h4>why 2nd</h4>
+                <p>this is description</p>
+            </div>
+        </div>
+
+
+        <div class="card special">
+            <div class="subcard">
+                <img src="boar.png" alt="Avatar" style="width:100%">
+                <div class="container center">
+                    <h1><b>This is us</b></h1>
+                    <h3>Join Discord</h3>
+                </div>
+            </div>
+            <div class="card-top center">
+                <h4>Discord</h4>
+                <p>this is description</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="subcard">
+                <img src="boar.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Game 3</b></h4>
+                    <p>why 3rd best</p>
+                </div>
+            </div>
+            <div class="card-top center">
+                <h4>game 3</h4>
+                <p>this is description</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="subcard">
+                <img src="boar.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>last game</b></h4>
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="card-top center">
+                <h4>this is top</h4>
+                <p>this is description</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <ul id="scene">
+            <li class="layer image" data-depth="1"><img src="planet1.png"></li>
+            <li class="layer image" data-depth="-1"><img src="planet2.png"></li>
+            <li class="layer image" data-depth="2"><img src="astronaut.png"></li>
+            <li class="layer image" data-depth="0.5"><img src="rocket.png"></li>
+        </ul>
+    </div>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+
+</body>
+
+</html>
