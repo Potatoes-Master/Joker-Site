@@ -9,7 +9,6 @@
 
 <body class="body">
 
-    <h2 class="center-text">Card</h2>
     <div class="cards">
         <div class="card">
             <div class="subcard">
@@ -42,7 +41,9 @@
 
         <div class="card special">
             <div class="subcard">
-                <img src="boar.png" alt="Avatar" style="width:100%">
+                <div class="main-image">
+                    <img src="boar.png" alt="Avatar" style="width:100%">
+                </div>
                 <div class="container center">
                     <h1><b>This is us</b></h1>
                     <h3>Join Discord</h3>
@@ -83,14 +84,15 @@
         </div>
     </div>
 
-    <div class="main">
+    <!-- add ur thing right here I think that would be great -->
+    <!-- <div class="main">
         <ul id="scene">
             <li class="layer image" data-depth="1"><img src="planet1.png"></li>
             <li class="layer image" data-depth="-1"><img src="planet2.png"></li>
             <li class="layer image" data-depth="2"><img src="astronaut.png"></li>
             <li class="layer image" data-depth="0.5"><img src="rocket.png"></li>
         </ul>
-    </div>
+    </div> -->
     <script>
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
